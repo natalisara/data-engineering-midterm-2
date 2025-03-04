@@ -1,0 +1,219 @@
+    1  git 
+    2  git--version
+    3  git --version
+    4  git config --global user.name "Natalia Saralidze"
+    5  git config --global user.email "saralidze.natalia@gmail.com"
+    6  ls
+    7  ls -a
+    8  cd Desktop
+    9  mkdir project1
+   10  project1
+   11  cd project1
+   12  /Desktop/project(master)
+   13  cd project(master)
+   14  git init
+   15  ls -la
+   16  /Desktop/project1(master*)>> git status
+   17  git status
+   18  git status
+   19  git add
+   20  git add .
+   21  git status
+   22  git log
+   23  git commit
+   24  git status
+   25  git add NataliasHomework14.py
+   26  Git status
+   27  cd Users/Administrator/Desktop/Project1
+   28  mkdir Project1
+   29  cd mkdir project1
+   30  mkdir project1
+   31  mkdir ProjectNew
+   32  git --version
+   33  cd Desktop
+   34  mkdir ProjectPy
+   35  ls
+   36  cd ProjectPy
+   37  ls
+   38  git init
+   39  ls -la
+   40  git status
+   41  git add mycalc.py
+   42  git status
+   43  git commit -m"Create mycalc program"
+   44  git status
+   45  git log
+   46  q
+   47  git status
+   48  git add mycalc.py
+   49  git status
+   50  git commit -m "Add subtraction"
+   51  git log
+   52  Q
+   53  q
+   54  git log --oneline
+   55  git status
+   56  git commit -am "Add multiply"
+   57  git log
+   58  git status
+   59  git commit -am "Add devide"
+   60  git status
+   61  git log
+   62  git log
+   63  git commit -am "add change"
+   64  git status
+   65  git log
+   66  git status
+   67  git log
+   68  git status
+   69  desktop
+   70  msdir
+   71  cd Desktop
+   72  ls
+   73  cd projectpy
+   74  git status
+   75  git log
+   76  git checkout 40cs
+   77  git checkout
+   78  q
+   79  cd Desktop
+   80  cd ProjectPy
+   81  sit status
+   82  git status
+   83  cd Desktof
+   84  cd convertor
+   85  cd projectnew
+   86  cd projectpy
+   87  cd ProjectPy
+   88  cd Desktop
+   89  cd Desktop
+   90  cd Desktop
+   91  ls
+   92  cd desktop
+   93  cd Desktop
+   94  ls
+   95  ls
+   96  ls
+   97  cd Desktop
+   98  cd projectpy
+   99  cd project
+  100  git init
+  101  git status
+  102  nano work.py
+  103  nano work.py
+  104  git branch
+  105  git checkout -b "main"
+  106  git branch
+  107  git status
+  108  git add .
+  109  git commit
+  110  git status
+  111  git commit -m "main"
+  112  python work.py
+  113  git status
+  114  git branch
+  115  git branch -d"master"
+  116  git branch -d "master"
+  117  git branch
+  118  git chackout -b "branch01"
+  119  git checkout -b "branch01"
+  120  git branch
+  121  nano
+  122  git checkout main
+  123  nano
+  124  cd Project
+  125  cd Desktop/
+  126  ls
+  127  clear
+  128  git clone https://github.com/tenamurvelashvili/proxima-solutions.git/
+  129  pwd
+  130  cd ..
+  131  cd ..
+  132  cd Home/
+  133  cd odoo
+  134  cd custom_addons/
+  135  cd proxima-solutions/
+  136  clear
+  137  ls -a
+  138  cd proxima_purchase_requisition/
+  139  ls -a
+  140  git branch
+  141  cd ..
+  142  clear
+  143  ls -a
+  144  clear
+  145  exit
+  146  [200~uv init my_project
+  147  uv init my_project
+  148  cd my_project
+  149  git init
+  150  uv venv
+  151  uv add requests
+  152  uv add pandas
+  153  uv sync
+  154  [200~cat <<EOF > test_script.py
+  155  import requests
+  156  import pandas as pd
+  157  def main():
+  158      print("Requests version:", requests.__version__)
+  159      print("Pandas version:", pd.__version__)
+  160  if __name__ == "__main__":
+  161      main()
+  162  EOF
+  163  [200~cat test_script.py
+  164  cat <<EOF > test_script.py
+  165  import requests
+  166  import pandas as pd
+  167  def main():
+  168  cat <<EOF > test_script.py
+  169  import requests
+  170  import pandas as pd
+  171  def main():
+  172      print("Requests version:", __version__)
+  173      print("Pandas version:", pd.__version__)
+  174  if __name__ == "__main__":
+  175      main()
+  176  EOF
+  177  cat test_script.py
+  178  uv run python test_script.py
+  179  uv add requests
+  180  pwd
+  181  cd /my_project
+  182  cd /c/Users/Administrator/my_project
+  183  ls
+  184  uv add requests pandas
+  185  uv sync
+  186  rm test_script.py
+  187  cat <<EOF> test_script.py
+  188  import requests
+  189  import pandas as pd
+  190  def main
+  191  ls
+  192  [200~mkdir data-engineering-midterm-2
+  193  git init
+  194  git --version
+  195  mkdir data-engineering-midterm-2
+  196  cd data-engineering-midterm-2
+  197  git init
+  198  touch README.md
+  199  echo "# Data Engineering Midterm 2" >> README.md
+  200  git add .
+  201  git commit -m "Initial commit"
+  202  git branch -M main
+  203  git remote add origin https://github.com/natalisara/data-engineering-midterm-2.git
+  204  git push -u origin main
+  205  nano theory_answers.md
+  206  git add .
+  207  git commit -m "Added project files"
+  208  git push
+  209  git push origin main
+  210  mkdir problem_7
+  211  cd problem_7
+  212  mkdir problem_7
+  213  touch problem_7/Dockerfile
+  214  nano problem_7/Dockerfile
+  215  touch problem_7/run.sh
+  216  nano problem_7/run.sh
+  217  chmod +x problem_7/run.sh
+  218  touch problem_7/commands.txt
+  219  history > problem_7/commands.txt
