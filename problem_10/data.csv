@@ -1,0 +1,4 @@
+Date,Revenue,Expense,Clicks,Conversions,AdType
+2023-01-01,1000.567,500.256,120,4,Positive
+2023-02-01,2000.789,,350,10,Negative
+2023-03-01,,300.456,500,15,Positive

@@ -63,7 +63,7 @@ scientific_processor = partial(transform_data,
 
 def process_pipeline(data_source, source_type):
     """
-    მონაცემთა კონვეიერი, რომელიც სხვადასხვა ტიპის მონაცემების დასამუშავებლად
+    მონაცემთა კონვეიერი, რომელიც სხვადასხვა ტიპის მონაცემებს ამუშავებს
     """
     processors = {
         'finance': finance_processor,
@@ -78,22 +78,26 @@ def process_pipeline(data_source, source_type):
 
 
 if __name__ == "__main__":
-    data = pd.DataFrame({
-        'Date': ['2023-01-01', '2023-02-01', '2023-03-01'],
-        'Revenue': [1000.567, 2000.789, np.nan],
-        'Expense': [500.256, np.nan, 300.456],
-        'Clicks': [120, 350, 500],
-        'Conversions': [4, 10, 15],
-        'AdType': ['Positive', 'Negative', 'Positive']
-    })
+    # CSV ფაილიდან მონაცემების წაკითხვა
+    input_file = "data.csv"
+    output_files = {
+        'finance': "processed_finance.csv",
+        'marketing': "processed_marketing.csv",
+        'scientific': "processed_scientific.csv"
+    }
 
-    print("Input Data:\n", data)
+    try:
+        data = pd.read_csv(input_file)
+        print(" Input Data Loaded from CSV:\n", data)
+    except FileNotFoundError:
+        print(f" Error: {input_file} not found. Please make sure the file exists.")
+        exit(1)
 
-    finance_result = process_pipeline(data, 'finance')
-    print("\n Finance Data Processed:\n", finance_result)
+    # თითოეული მონაცემის დამუშავება და შენახვა CSV-ში
+    for category in ['finance', 'marketing', 'scientific']:
+        processed_data = process_pipeline(data, category)
+        print(f"\n {category.capitalize()} Data Processed:\n", processed_data)
 
-    marketing_result = process_pipeline(data, 'marketing')
-    print("\n Marketing Data Processed:\n", marketing_result)
-
-    scientific_result = process_pipeline(data, 'scientific')
-    print("\n Scientific Data Processed:\n", scientific_result)
+        # დამუშავებული მონაცემების შენახვა CSV ფაილში
+        processed_data.to_csv(output_files[category], index=False)
+        print(f" {category.capitalize()} Data Saved to {output_files[category]}")
