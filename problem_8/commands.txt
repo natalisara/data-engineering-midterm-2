@@ -1,0 +1,5 @@
+pip install fastapi uvicorn
+python app/main.py
+curl http://127.0.0.1:8000/users
+docker build -t fastapi_sqlite_app .
+docker run -p 8000:8000 fastapi_sqlite_app
